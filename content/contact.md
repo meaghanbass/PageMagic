@@ -5,7 +5,7 @@ metaDescription: "Contact"
 tags: ["Contact"]
 ---
 
-<form name="contact" method="POST" data-netlify="true" id="contact">
+<form name="contact" method="POST" data-netlify="true" id="contact" netlify netlify-honeypot="bot-field">
   <p>
     <label>Name: <input type="text" name="name" /></label>   
   </p>
