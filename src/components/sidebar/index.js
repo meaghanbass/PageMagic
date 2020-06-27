@@ -99,19 +99,14 @@ const SidebarLayout = ({location}) => (
             <Tree
               edges={allMdx.edges}
             />
-            <Divider />
-            {/* <img src="https://api.netlify.com/api/v1/badges/9181d9a1-4290-4d9a-bcfb-8472202b43a2/deploy-status" alt="Netlify Status"></img> */}
-            {config.sidebar.links.map((link, key) => {
+            {/* <Divider /> */}
+            {/* {config.sidebar.links.map((link, key) => {
               if (link.link !== '' && link.text !== '') {
                 return (
                   <img className="p-4 pb-6 m-auto" src="https://api.netlify.com/api/v1/badges/9181d9a1-4290-4d9a-bcfb-8472202b43a2/deploy-status" alt="Netlify Status"></img>
-                  // <ListItem key={key} to={link.link}>
-                  //   {link.text}
-                  //   <ExternalLink size={14} />
-                  // </ListItem>
                 );
               }
-            })}
+            })} */}
           </ul>
         </Sidebar>
       );

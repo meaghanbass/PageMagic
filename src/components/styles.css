@@ -4,7 +4,8 @@
 @tailwind utilities;
 
 :root {
-  --theme-accent: #6F5CB5 !important;
+  /* --theme-accent: #6F5CB5 !important; */
+  --theme-accent: #1a1a1a !important;
 }
 
 body {
@@ -193,6 +194,7 @@ body {
 /* Header section starts here */
 .navBarDefault {
   z-index: 1;
+  background: var(--theme-accent) !important;
 }
 .navBarBrand {
   font-size: 28px;
@@ -223,8 +225,9 @@ body {
 }
 .mainWrapper {
   color: rgb(59, 69, 78);
-  max-width: 750px;
-  margin: auto;
+  /* max-width: 750px; */
+  max-width: 850px;
+  /* margin: auto; */
 }
 .navBarUL li a:hover {
   opacity: .7;
@@ -246,6 +249,23 @@ pre {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
+}
+
+.mainWrapper a {
+  text-decoration: underline;
+}
+
+.mainWrapper details {
+  border: 1px solid #e2e8f0;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.mainWrapper details summary {
+  font-weight: bold;
 }
 
 /* Header section ends here */
@@ -382,7 +402,8 @@ pre {
 .titleWrapper {
   display: flex;
   align-items: center;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
+  padding-bottom: 16px;
   border-bottom: 1px solid #76787C;
   margin-bottom: 32px;
 }

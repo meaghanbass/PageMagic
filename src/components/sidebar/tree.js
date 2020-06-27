@@ -81,12 +81,15 @@ const Tree = ({edges}) => {
     });
   }
   return (
+    <>
+    <li className="item"><a class="hover:font-bold hover:text-gray-900" href="/">Home</a></li>
     <TreeNode
       className={`${config.sidebar.frontLine ? 'showFrontLine' : 'hideFrontLine'} firstLevel`}
       setCollapsed={toggle}
       collapsed={collapsed}
       {...treeData}
     />
+    </>
   );
 }
 
